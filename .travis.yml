@@ -2,6 +2,10 @@ language: node_js
 node_js:
   - "8"
 script:
+- cat .git/config
+- echo TRAVIS_PULL_REQUEST $TRAVIS_PULL_REQUEST
+- echo TRAVIS_PULL_REQUEST_BRANCH $TRAVIS_PULL_REQUEST_BRANCH
+- echo TRAVIS_PULL_REQUEST_SLUG $TRAVIS_PULL_REQUEST_SLUG
 - git config remote.origin.fetch "+refs/heads/*:refs/remotes/origin/*"
 - git fetch origin
 - git checkout $TRAVIS_BRANCH || git checkout -b $TRAVIS_BRANCH
