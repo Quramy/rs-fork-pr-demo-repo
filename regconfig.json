@@ -1,0 +1,13 @@
+{
+  "core": {
+    "workingDir": ".reg",
+    "actualDir": "actual",
+    "threshold": 0
+  },
+  "plugins": {
+    "reg-keygen-git-hash-plugin": {},
+    "reg-notify-github-plugin": {
+      "clientId": "s7Q0NTA0MbTULyrWTcsvytYtKNJNSc3N1y1KLcjXNzY3N7fUDywtSsytBAA="
+    }
+  }
+}
